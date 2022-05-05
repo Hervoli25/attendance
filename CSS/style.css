@@ -1,0 +1,23 @@
+#footer {
+  text-align: center;
+  color: red;
+  font-size: 25px;
+  text-transform: capitalize;
+}
+
+.success {
+  color: green;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+a {
+  text-decoration: none;
+}
+
+.card,
+.content {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
