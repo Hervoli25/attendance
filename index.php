@@ -1,13 +1,14 @@
 <?php
 $title = 'Index';
 require_once 'includes/header.php';
+require_once 'includes/connec.php';
 
 ?>
 
 <h1 class="text-warning mt-2 text-center">Registration For IT Conference!</h1>
 
 
-<form method="get" action="success.php">
+<form method="post" action="success.php">
     <div class="mb-3">
         <label for="firstname" class="form-label">First Name</label>
         <input type="text" class="form-control" id="firstName" name="firstname" placeholder="Enter firstname">
@@ -26,7 +27,7 @@ require_once 'includes/header.php';
     </div>
 
 
-    <div class="mb-3">
+    <div class="mb-2">
         <label for="" class="form-label">Area Of Experience</label>
         <select class="form-control" id="specialty" name="specialty">
             <option selected>Select Your Profession</option>
@@ -34,10 +35,10 @@ require_once 'includes/header.php';
             <option value="Sofware Developer">Sofware Developer</option>
             <option value="Web Developer">Web Developer</option>
             <option value="Other">Other</option>
+        </select>
     </div>
 
-
-    <div class="mb-3">
+    <div class="mb-4">
         <label for="email" class="form-label">Email address</label>
         <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email address" required>
         <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
